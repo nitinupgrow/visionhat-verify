@@ -1,5 +1,4 @@
-import { CheckCircle2, ShieldCheck, ArrowLeft, BadgeCheck } from "lucide-react";
-import { QRCodeSVG } from "qrcode.react";
+import { CheckCircle2, ShieldCheck, ArrowLeft, BadgeCheck, QrCode, Sparkles } from "lucide-react";
 import { Button } from "@/components/ui/button";
 import { VisionHatLogo } from "@/components/VisionHatLogo";
 import { CertificateData } from "@/components/CertificateResult";
@@ -57,33 +56,24 @@ export const VerifiedSuccessPage = ({ data, onBack }: Props) => {
               </dl>
             </div>
 
-            {/* Real QR code */}
+            {/* QR — Upcoming feature */}
             <div className="flex flex-col items-center gap-3 lg:w-52">
-              <div className="rounded-xl border-2 border-primary/15 bg-card p-3 shadow-soft">
-                <QRCodeSVG
-                  value={`https://www.visionhat.com/verify/${data.certificateId}`}
-                  size={160}
-                  level="H"
-                  bgColor="#ffffff"
-                  fgColor="hsl(215 75% 22%)"
-                  imageSettings={{
-                    src:
-                      "data:image/svg+xml;utf8," +
-                      encodeURIComponent(
-                        `<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 24 24' fill='hsl(145 60% 38%)'><path d='M9 16.17 4.83 12l-1.42 1.41L9 19 21 7l-1.41-1.41z'/></svg>`
-                      ),
-                    height: 28,
-                    width: 28,
-                    excavate: true,
-                  }}
-                />
+              <div className="relative rounded-xl border-2 border-dashed border-primary/25 bg-muted/40 p-3 shadow-soft">
+                <div className="flex h-[160px] w-[160px] items-center justify-center rounded-md bg-card/60">
+                  <QrCode className="h-20 w-20 text-primary/30" strokeWidth={1.4} />
+                </div>
+                <div className="absolute -top-2.5 left-1/2 -translate-x-1/2 whitespace-nowrap rounded-full border border-primary/20 bg-card px-2.5 py-0.5 text-[10px] font-bold uppercase tracking-wider text-primary shadow-soft">
+                  <span className="inline-flex items-center gap-1">
+                    <Sparkles className="h-3 w-3" /> Coming Soon
+                  </span>
+                </div>
               </div>
               <div className="text-center">
-                <div className="text-xs font-bold uppercase tracking-wider text-primary">
-                  Scan to Verify
+                <div className="text-xs font-bold uppercase tracking-wider text-muted-foreground">
+                  QR Verification
                 </div>
                 <p className="mt-1 max-w-[180px] text-[11px] leading-relaxed text-muted-foreground">
-                  Scan this QR with any device to confirm authenticity online.
+                  Scan-to-verify is an upcoming feature. Stay tuned!
                 </p>
               </div>
             </div>
