@@ -9,7 +9,7 @@ import { VerifiedSuccessPage } from "@/components/VerifiedSuccessPage";
 const VALID_CERTIFICATE: Record<string, CertificateData> = {
   "VH-2026-00163": {
     studentName: "Amrit",
-    courseName: "1-Year Professional Course in Digital Marketing",
+    courseName: "1-Year Professional Course in DIT (Diploma in Information Technology)",
     institute: "VisionHat Academy",
     duration: "February 2025 – February 2026",
     certificateId: "VH-2026-00163",
