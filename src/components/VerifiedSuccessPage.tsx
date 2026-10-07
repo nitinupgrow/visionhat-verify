@@ -53,7 +53,17 @@ export const VerifiedSuccessPage = ({ data, onBack }: Props) => {
                 <Row label="Course Duration" value={data.duration} />
                 <Row label="Certificate ID" value={data.certificateId} mono />
                 <Row label="Issue Date" value={data.issueDate} />
+                <Row label="Email" value={data.emailMasked} mono />
+                <Row label="Phone" value={data.phoneMasked} mono />
               </dl>
+
+              {/* Privacy note */}
+              <div className="mt-5 flex items-start gap-2 rounded-md border border-border bg-muted/40 px-3 py-2.5">
+                <ShieldCheck className="mt-0.5 h-3.5 w-3.5 shrink-0 text-success" />
+                <p className="text-[11px] leading-relaxed text-muted-foreground">
+                  Contact details are partially hidden for privacy protection.
+                </p>
+              </div>
             </div>
 
             {/* QR — Upcoming feature */}

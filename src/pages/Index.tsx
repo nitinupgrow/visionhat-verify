@@ -14,8 +14,8 @@ const VALID_CERTIFICATE: Record<string, CertificateData> = {
     duration: "June 2024 – June 2025",
     certificateId: "VH-2026-00163",
     issueDate: "June 2025",
-    emailMasked: "",
-    phoneMasked: "",
+    emailMasked: "ay****@gmail.com",
+    phoneMasked: "******7708",
   },
 };
 
