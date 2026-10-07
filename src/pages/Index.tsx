@@ -17,6 +17,16 @@ const VALID_CERTIFICATE: Record<string, CertificateData> = {
     emailMasked: "ay****@gmail.com",
     phoneMasked: "******7708",
   },
+  "VH-2026-00133": {
+    studentName: "AKUL",
+    courseName: "1-Year Professional Course in DIT",
+    institute: "VisionHat Academy",
+    duration: "June 2024 – June 2025",
+    certificateId: "VH-2026-00133",
+    issueDate: "June 2025",
+    emailMasked: "ay****@gmail.com",
+    phoneMasked: "******7708",
+  },
 };
 
 const Index = () => {
@@ -95,7 +105,7 @@ const Index = () => {
                   id="certId"
                   value={certId}
                   onChange={(e) => setCertId(e.target.value)}
-                  placeholder="Enter Certificate ID (e.g. VH-2026-00163)"
+                  placeholder="Enter Certificate ID"
                   className="h-12 pl-9 font-mono text-sm uppercase tracking-wider"
                   autoComplete="off"
                   spellCheck={false}
