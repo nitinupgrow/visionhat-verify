@@ -17,13 +17,13 @@ const VALID_CERTIFICATE: Record<string, CertificateData> = {
     emailMasked: "ay****@gmail.com",
     phoneMasked: "******7708",
   },
-  "VH-2026-00133": {
-    studentName: "AKUL",
+"VH-2026-00133": {
+    studentName: "Aayush Tanwar",
     courseName: "1-Year Professional Course in DIT",
     institute: "VisionHat Academy",
-    duration: "June 2024 – June 2025",
+    duration: "July 2025 – July 2026",
     certificateId: "VH-2026-00133",
-    issueDate: "June 2025",
+    issueDate: "30-07-2026",
     emailMasked: "ay****@gmail.com",
     phoneMasked: "******7708",
   },
